@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <h2>Hello World</h2>
-    <img src="/assets/images/basic-shield.png"/>
+    <div class="container">
+      <img src="/assets/images/basic-shield.png"/>
+    </div>
   `
 })
 export class AppComponent {
