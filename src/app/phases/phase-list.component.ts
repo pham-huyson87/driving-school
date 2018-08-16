@@ -6,7 +6,8 @@ import { Component } from '@angular/core'
     <div>
         <h1>Phases</h1>
         <hr/>
-        <phase [phase]="phase1"></phase>
+        <phase  [phase]="phase1"
+                (phaseClick)=handlePhaseClicked($event)></phase>
     </div>
     `
 })
@@ -17,4 +18,8 @@ export class PhaseListComponent {
         name: 'Phase 1',
         description: 'Préalable au permis d\'apprenti'
     };
+
+    handlePhaseClicked(data) {
+        console.log('received: ', data);
+    }
 }
