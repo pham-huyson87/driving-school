@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PhaseListComponent } from './phases/phase-list.component';
+import { Phase } from './phases/phase.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { PhaseListComponent } from './phases/phase-list.component';
     ],
   declarations: [
     AppComponent,
-    PhaseListComponent
+    PhaseListComponent,
+    Phase
   ],
   bootstrap: [AppComponent]
 })

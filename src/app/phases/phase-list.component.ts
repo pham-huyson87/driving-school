@@ -2,10 +2,16 @@ import { Component } from '@angular/core'
 
 @Component({
     selector: 'phase-list',
-    templateUrl: './phase-list.component.html'
+    template: `
+    <div>
+        <h1>Phases</h1>
+        <hr/>
+        <phase [phase]="phase1"></phase>
+    </div>
+    `
 })
 export class PhaseListComponent {
-    phase = {
+    phase1 = {
         id: 1,
         number: '1',
         name: 'Phase 1',
