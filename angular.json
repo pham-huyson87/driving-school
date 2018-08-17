@@ -24,11 +24,16 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/jquery-ui-dist/jquery-ui.min.css",
+              "node_modules/jquery-timepicker/jquery.timepicker.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/jquery-ui-dist/jquery-ui.min.js",
+              "src/start.js",
+              "node_modules/jquery-timepicker/jquery.timepicker.js"
             ]
           },
           "configurations": {

@@ -3,15 +3,11 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
 @Component({
     selector: 'phase',
     template: `
-    <div class="well">
-        <h2>{{phase.name}}</h2>
-        <div class="pad-left">{{phase.description}}</div>
-        <button class="btn btn-primary" (click)="handlePhaseClick()">Click me!</button>
-    </div>
-    `,
-    styles: [`
-        .pad-left { margin-left: 10px; }
-    `]
+        <div>{{phase.name}} - {{phase.description}}</div>
+        <div>
+            <module-list [modules]="phase.modules"></module-list>
+        </div>
+    `
 })
 export class Phase {
     @Input() phase:any

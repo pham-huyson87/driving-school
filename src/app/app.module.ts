@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PhaseListComponent } from './phases/phase-list.component';
 import { Phase } from './phases/phase.component';
+import { ModuleList } from './modules/module-list.component';
+import { Module } from './modules/module.component';
 
 @NgModule({
   imports: [
@@ -12,7 +14,9 @@ import { Phase } from './phases/phase.component';
   declarations: [
     AppComponent,
     PhaseListComponent,
-    Phase
+    Phase,
+    ModuleList,
+    Module
   ],
   bootstrap: [AppComponent]
 })
