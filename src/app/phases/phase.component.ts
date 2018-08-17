@@ -17,4 +17,8 @@ export class Phase {
     handlePhaseClick() {
         this.phaseClick.emit(this.phase.name);
     }
+
+    doOperation() {
+        console.log('foo');
+    }
 }
