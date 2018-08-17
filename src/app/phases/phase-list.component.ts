@@ -17,6 +17,8 @@ import { Component } from '@angular/core'
             Call Phase2 doOperation()
         </button>
 
+        <h3>{{phase2.someProperty}}</h3>
+
     </div>
     `
 })

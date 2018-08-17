@@ -14,6 +14,8 @@ export class Phase {
     @Input() phase:any
     @Output() phaseClick = new EventEmitter()
 
+    someProperty:any = "some property"
+
     handlePhaseClick() {
         this.phaseClick.emit(this.phase.name);
     }
