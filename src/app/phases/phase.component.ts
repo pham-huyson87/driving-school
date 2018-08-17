@@ -5,10 +5,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
     template: `
     <div class="well">
         <h2>{{phase.name}}</h2>
-        <div>{{phase.description}}</div>
+        <div class="pad-left">{{phase.description}}</div>
         <button class="btn btn-primary" (click)="handlePhaseClick()">Click me!</button>
     </div>
-    `
+    `,
+    styles: [`
+        .pad-left { margin-left: 10px; }
+    `]
 })
 export class Phase {
     @Input() phase:any
