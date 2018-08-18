@@ -2,8 +2,100 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<phase-list></phase-list>'
+  template:  `
+    <student-file-short [file]="data.student_file"></student-file-short>
+    <phase-list [phases]="data.phases"></phase-list>
+    `
 })
 export class AppComponent {
-  title = 'driving-school';
+
+  data = {
+
+    student_file: {
+      firstname: 'Huy Son',
+      lastname: 'Pham',
+      contract_no: '11122233'
+    },
+
+    phases: [
+      {
+          id: 1,
+          number: '1',
+          name: 'Phase 1',
+          description: 'Préalable au permis d\'apprenti',
+          modules: [
+              {
+                  name: "Le véhicule",
+                  date: '',
+                  times_start: '',
+                  times_end: '',
+                  student_signature: '',
+                  provider_signature: ''
+              },
+              {
+                  name: "Le conducteur",
+                  date: '',
+                  times_start: '',
+                  times_end: '',
+                  student_signature: '',
+                  provider_signature: ''
+              },
+              {
+                  name: "L'environnement",
+                  date: '',
+                  times_start: '',
+                  times_end: '',
+                  student_signature: '',
+                  provider_signature: ''
+              },
+              {
+                  name: "Comportements à risque",
+                  date: '',
+                  times_start: '',
+                  times_end: '',
+                  student_signature: '',
+                  provider_signature: ''
+              },
+              {
+                  name: "Évaluation",
+                  date: '',
+                  times_start: '',
+                  times_end: '',
+                  student_signature: '',
+                  provider_signature: ''
+              }
+          ]
+      },
+      {
+          id: 2,
+          number: '2',
+          name: 'Phase 2',
+          description: 'Conduite dirigée',
+          modules: []
+      },
+      {
+          id: 3,
+          number: '3',
+          name: 'Phase 3',
+          description: 'Conduite semi-dirigée',
+          modules: []
+      },
+      {
+          id: 4,
+          number: '4',
+          name: 'Phase 4',
+          description: 'Conduite semi-dirigée à autonome',
+          modules: []
+      },
+  ]
+  
+
+
+
+  }
+
+
+
+
+
 }

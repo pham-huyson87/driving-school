@@ -6,6 +6,7 @@ import { PhaseListComponent } from './phases/phase-list.component';
 import { Phase } from './phases/phase.component';
 import { ModuleList } from './modules/module-list.component';
 import { Module } from './modules/module.component';
+import { StudentFileShort } from './student/student-file-short.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { Module } from './modules/module.component';
     PhaseListComponent,
     Phase,
     ModuleList,
-    Module
+    Module,
+    StudentFileShort
   ],
   bootstrap: [AppComponent]
 })

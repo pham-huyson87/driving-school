@@ -3,10 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
 @Component({
     selector: 'phase',
     template: `
-        <div>{{phase.name}} - {{phase.description}}</div>
-        <div>
-            <module-list [modules]="phase.modules"></module-list>
-        </div>
+        <div>NOT USED for now</div>
     `
 })
 export class Phase {
