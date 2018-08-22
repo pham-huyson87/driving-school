@@ -25,3 +25,11 @@
     {{module.not_existant_property}}
 -->
 {{module?.not_existant_property?.not_existant_sub_property}}
+
+
+
+<div *ngIf="module?.property">
+    Show if module and
+    module.property
+    are defined
+</div>
