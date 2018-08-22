@@ -17,3 +17,11 @@
         <input name="provider-signature" type="text" value="{{module.provider_signature}}">
     </div>   
 </div>
+
+
+<!--
+    WAS
+
+    {{module.not_existant_property}}
+-->
+{{module?.not_existant_property?.not_existant_sub_property}}
