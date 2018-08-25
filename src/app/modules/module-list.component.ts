@@ -7,6 +7,10 @@ import { Component, Input } from '@angular/core'
         .green { 
             background-color: red !important; 
         } 
+
+        .bold {
+            font-weight: bold;
+        }
     `]
 })
 export class ModuleList {
