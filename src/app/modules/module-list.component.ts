@@ -15,4 +15,15 @@ import { Component, Input } from '@angular/core'
 })
 export class ModuleList {
     @Input() modules:any
+
+    getClasses() {
+        
+        let addGreen = true;
+        let addBold = true
+        
+        return {
+            green: addGreen,
+            bold: addBold
+        }
+    }
 }
