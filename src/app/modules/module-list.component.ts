@@ -26,4 +26,18 @@ export class ModuleList {
             bold: addBold
         }
     }
+
+    getStyles():any {
+
+        let condition = true;
+
+        if (condition) {
+            return {
+                color: '#003300',
+                'font-weight': 'bold'
+            };
+        }
+
+        return {};
+    }
 }
