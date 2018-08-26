@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core'
+import { ToastrService } from '../common/toastr.service';
 
 @Component({
     selector: 'module-list',
@@ -15,6 +16,14 @@ import { Component, Input } from '@angular/core'
 })
 export class ModuleList {
     @Input() modules:any
+
+    constructor(private toatrService: ToastrService) {
+
+    }
+
+    handleClick(data) {
+        this.toatrService.success(data)
+    }
 
     getClasses() {
         

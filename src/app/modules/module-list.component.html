@@ -11,10 +11,10 @@
         <input class="editable-time" name="editable-time-end" type="text" value="{{module.times_end}}">
     </div>
     <div class="col-md-2">
-        <input name="student-signature" type="text" value="{{module.student_signature}}">
+        <input name="student-signature" type="text" value="{{module.student_signature}}" (click)="handleClick(module.name)">
     </div>
     <div class="col-md-2">
-        <input name="provider-signature" type="text" value="{{module.provider_signature}}">
+        <input name="provider-signature" type="text" value="{{module.provider_signature}}" (click)="handleClick(module.name)" >
     </div>   
 </div>
 
