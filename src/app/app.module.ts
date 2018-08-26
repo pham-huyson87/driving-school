@@ -8,6 +8,9 @@ import { ModuleList } from './modules/module-list.component';
 import { Module } from './modules/module.component';
 import { StudentFileShort } from './student/student-file-short.component';
 
+import { PhaseService } from './phases/shared/phase.service';
+
+
 @NgModule({
   imports: [
         BrowserModule
@@ -19,6 +22,9 @@ import { StudentFileShort } from './student/student-file-short.component';
     ModuleList,
     Module,
     StudentFileShort
+  ],
+  providers: [
+    PhaseService
   ],
   bootstrap: [AppComponent]
 })
