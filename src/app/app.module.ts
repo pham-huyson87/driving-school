@@ -9,12 +9,13 @@ import { Module } from './modules/module.component';
 import { StudentFileShort } from './student/student-file-short.component';
 
 import { PhaseService } from './phases/shared/phase.service';
+import { StudentService } from './student/shared/student.service';
 
 
 @NgModule({
   imports: [
-        BrowserModule
-    ],
+    BrowserModule
+  ],
   declarations: [
     AppComponent,
     PhaseListComponent,
@@ -24,7 +25,8 @@ import { PhaseService } from './phases/shared/phase.service';
     StudentFileShort
   ],
   providers: [
-    PhaseService
+    PhaseService,
+    StudentService
   ],
   bootstrap: [AppComponent]
 })

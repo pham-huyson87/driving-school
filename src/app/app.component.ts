@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PhaseService } from './phases/shared/phase.service';
+import { StudentService } from './student/shared/student.service';
 
 @Component({
   selector: 'app-root',
@@ -11,19 +12,17 @@ import { PhaseService } from './phases/shared/phase.service';
 export class AppComponent implements OnInit {
 
   data = {
-    phases: {},
-    student_file: {
-      firstname: 'Huy Son',
-      lastname: 'Pham',
-      contract_no: '11122233'
-    }
+    phases: [],
+    student_file: {}
   }
 
-  constructor(private phaseService: PhaseService) {
+  constructor(private phaseService: PhaseService, 
+              private studentService: StudentService) {
 
   }
 
   ngOnInit(): void {
       this.data.phases = this.phaseService.getPhases();
+      this.data.student_file = this.studentService.getStudentFile();
   }
 }
