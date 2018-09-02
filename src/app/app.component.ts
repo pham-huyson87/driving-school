@@ -5,6 +5,8 @@ import { StudentService } from './student/shared/student.service';
   selector: 'app-root',
   template:  `
     <student-file-short [file]="data.student_file"></student-file-short>
+    <a [routerLink]="['phase/1/module/1']">Phase 1 Module 1</a>
+    <a [routerLink]="['phase/1/module/2']">Phase 1 Module 2</a>
     <router-outlet></router-outlet>
     `
 })
