@@ -13,6 +13,7 @@ export class Module implements OnInit {
 
     phaseId:any
     moduleId:any
+    isDirty:boolean = true;
 
     @Input() module:any
 

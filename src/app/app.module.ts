@@ -33,8 +33,20 @@ import { appRoutes } from './routes'
     PhaseService,
     StudentService,
     ToastrService,
-    ModuleRouteActivator
+    ModuleRouteActivator,
+    {
+      provide: 'canDeactivatePhaseModule',
+      useValue: checkDirtyState
+    }
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function checkDirtyState(component: Module) {
+  
+  if (component.isDirty)
+    return window.confirm("Are you sure ?");
+  
+  return true;
+}

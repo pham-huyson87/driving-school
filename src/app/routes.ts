@@ -9,7 +9,8 @@ export const appRoutes:Routes = [
     { 
         path: 'phase/:phase_id/module/:module_id',
         component: Module,
-        canActivate: [ModuleRouteActivator]
+        /*canActivate: [ModuleRouteActivator],*/
+        canDeactivate : ['canDeactivatePhaseModule']/**/
     },
     { path: '', redirectTo: '/phases', pathMatch: 'full' }
 ]
