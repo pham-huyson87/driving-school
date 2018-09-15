@@ -12,6 +12,7 @@ import { StudentFileShort } from './student/student-file-short.component';
 import { PhaseService } from './phases/shared/phase.service';
 import { StudentService } from './student/shared/student.service';
 import { ToastrService } from './common/toastr.service';
+import { ModuleRouteActivator } from './modules/module-route-activator.service';
 
 import { appRoutes } from './routes'
 
@@ -31,7 +32,8 @@ import { appRoutes } from './routes'
   providers: [
     PhaseService,
     StudentService,
-    ToastrService
+    ToastrService,
+    ModuleRouteActivator
   ],
   bootstrap: [AppComponent]
 })
